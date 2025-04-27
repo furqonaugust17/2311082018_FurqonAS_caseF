@@ -16,7 +16,7 @@ class ReservasiController extends Controller
     public function index()
     {
         if (request()->ajax()) {
-            $reservasis = Reservasi::query();
+            $reservasis = Reservasi::latest();
             return DataTables::of($reservasis)->toJson();
         }
         return view('reservasi.index');
