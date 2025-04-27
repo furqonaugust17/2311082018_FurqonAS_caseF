@@ -26,7 +26,7 @@ class ReservasiUpdateRequest extends FormRequest
 
         return [
             'nama_pelanggan' => ['required', 'string', 'max:255'],
-            'nomor_meja' => ['required', 'integer', 'min:1',  Rule::unique('reservasis') // table 'reservasis'
+            'nomor_meja' => ['required',  Rule::unique('reservasis') // table 'reservasis'
                 ->where(function ($query) {
                     return $query
                         ->where('tanggal_reservasi', $this->tanggal_reservasi)
