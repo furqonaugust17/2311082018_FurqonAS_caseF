@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('reservasi.index');
 });
 Route::get('reservasi/trashed', [ReservasiController::class, 'trashed'])->name('reservasi.trashed');
 Route::post('reservasi/restore/{id}', [ReservasiController::class, 'restore'])->name('reservasi.restore');
