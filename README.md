@@ -52,34 +52,34 @@ Penghapusan reservasi menggunakan metode **Soft Delete**, sehingga data yang dih
 ## Struktur Folder
 
 ```
-app/
-├── Http/
-│   └── Controllers/
-│       └── ReservasiController.php
-│   └── Request/
-│       └── ReservasiStoreRequest.php
-│       └── ReservasiUpdateRequest.php
-├── Models/
-│   └── Reservasi.php
-database/
-├── factories/
-│   └── ReservasiFactory.php
-├── seeders/
-│   └── ReservasiSeeder.php
-resources/
-├── views/
-│   └── components/
-│       ├── footer.blade.php
-│       ├── header.blade.php
-│       ├── layout.blade.php
-│       └──  sidebar.blade.php
-│   └── reservasi/
-│       ├── create.blade.php
-│       ├── edit.blade.php
-│       ├── index.blade.php
-│       └── restore.blade.php
-routes/
-└── web.php
+├── app/
+|   ├── Http/
+│   |   ├── Controllers/
+│   |   |   └── ReservasiController.php
+│   |   └── Request/
+│   |       └── ReservasiStoreRequest.php
+│   |       └── ReservasiUpdateRequest.php
+|   └── Models/
+│       └── Reservasi.php
+├── database/
+|   ├── factories/
+│   |   └── ReservasiFactory.php
+|   └── seeders/
+│       └── ReservasiSeeder.php
+├── resources/
+|   └── views/
+│       ├── components/
+│       |   ├── footer.blade.php
+│       |   ├── header.blade.php
+│       |   ├── layout.blade.php
+│       |   └──  sidebar.blade.php
+│       └── reservasi/
+│           ├── create.blade.php
+│           ├── edit.blade.php
+│           ├── index.blade.php
+│           └── restore.blade.php
+└── routes/
+    └── web.php
 ```
 
 ## Teknologi yang Digunakan
