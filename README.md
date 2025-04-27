@@ -92,8 +92,8 @@ Penghapusan reservasi menggunakan metode **Soft Delete**, sehingga data yang dih
 ## Author
 
 **Nama:** Furqon August Seventeenth  
-**Profil:** Mahasiswa Teknologi Rekayasa Perangkat Lunak di Politeknik Negeri Padang
-**NIM:** 2311082018
+**Profil:** Mahasiswa Teknologi Rekayasa Perangkat Lunak di Politeknik Negeri Padang  
+**NIM:** 2311082018  
 **Fokus:** Web Development & Mobile Development  
 **Brand:** Vaquos
 
