@@ -58,14 +58,14 @@
                                                 <i class="fas fa-table"></i>
                                             </div>
                                         </div>
-                                        <input type="text" value="{{old('nomor_meja')}}" name="nomor_meja" class="form-control @error('nomor_meja')
-                                            is-invalid
-                                        @enderror">
-                                        @error('nomor_meja')
-                                        <div class="invalid-feedback">
-                                            {{$message}}
-                                        </div>
-                                        @enderror
+                                        <select name="nomor_meja" id="" class="form-control">
+                                            <option value="A1">A1</option>
+                                            <option value="A2">A2</option>
+                                            <option value="A3">A3</option>
+                                            <option value="B1">B1</option>
+                                            <option value="B2">B2</option>
+                                            <option value="B3">B3</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -96,7 +96,7 @@
                                         </div>
                                         <input type="text" value="{{old('tanggal_reservasi')}}" name="tanggal_reservasi"
                                             class="form-control datepicker @error('tanggal_reservasi')
-                                            
+                                            is-invalid
                                         @enderror">
                                         @error('tanggal_reservasi')
                                         <div class="invalid-feedback">

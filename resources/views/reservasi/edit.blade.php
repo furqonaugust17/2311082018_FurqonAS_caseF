@@ -60,16 +60,26 @@
                                                 <i class="fas fa-table"></i>
                                             </div>
                                         </div>
-                                        <input type="text"
-                                            value="{{ $errors->any()? old('nomor_meja') : $reservasi->nomor_meja}}"
-                                            name="nomor_meja" class="form-control @error('nomor_meja')
-                                            is-invalid
-                                        @enderror">
-                                        @error('nomor_meja')
-                                        <div class="invalid-feedback">
-                                            {{$message}}
-                                        </div>
-                                        @enderror
+                                        <select name="nomor_meja" id="" class="form-control">
+                                            <option value="A1" @if ($reservasi->nomor_meja == 'A1')
+                                                selected
+                                                @endif>A1</option>
+                                            <option value="A2" @if ($reservasi->nomor_meja == 'A2')
+                                                selected
+                                                @endif>A2</option>
+                                            <option value="A3" @if ($reservasi->nomor_meja == 'A3')
+                                                selected
+                                                @endif>A3</option>
+                                            <option value="B1" @if ($reservasi->nomor_meja == 'B1')
+                                                selected
+                                                @endif>B1</option>
+                                            <option value="B2" @if ($reservasi->nomor_meja == 'B1')
+                                                selected
+                                                @endif>B2</option>
+                                            <option value="B3" @if ($reservasi->nomor_meja == 'B1')
+                                                selected
+                                                @endif>B3</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -103,7 +113,7 @@
                                         <input type="text"
                                             value="{{ $errors->any()? old('tanggal_reservasi') : $reservasi->tanggal_reservasi}}"
                                             name="tanggal_reservasi" class="form-control datepicker @error('tanggal_reservasi')
-                                            
+                                            is-invalid
                                         @enderror">
                                         @error('tanggal_reservasi')
                                         <div class="invalid-feedback">
@@ -148,7 +158,7 @@
                                         <select name="status" id="" class="form-control @error('status')
                                             is-invalid
                                         @enderror">
-                                            <option value="terjadwal" disabled @if ($reservasi->status == 'terjadwal')
+                                            <option value="terjadwal" @if ($reservasi->status == 'terjadwal')
                                                 selected
                                                 @endif>Terjadwal</option>
                                             <option value="hadir" @if ($reservasi->status == 'hadir')
