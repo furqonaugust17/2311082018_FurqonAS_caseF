@@ -85,7 +85,7 @@ Penghapusan reservasi menggunakan metode **Soft Delete**, sehingga data yang dih
 ## Teknologi yang Digunakan
 
 -   PHP 8.x
--   Laravel 10.x
+-   Laravel 11.x
 -   MySQL
 -   Bootstrap untuk tampilan antarmuka.
 
